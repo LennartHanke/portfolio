@@ -255,7 +255,7 @@ h1,h2,h3{
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* füllt die Kachel, schneidet bei Bedarf zu */
+  object-fit: contain;       /* füllt die Kachel, schneidet bei Bedarf zu */
   transition: transform 0.5s ease;
 }
 .project-card:hover .project-media img{ transform: scale(1.02); }
