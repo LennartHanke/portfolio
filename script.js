@@ -116,7 +116,7 @@ const revealObserver = new IntersectionObserver((entries) => {
       revealObserver.unobserve(entry.target);
     }
   });
-}, { threshold: 0, rootMargin: '0px 0px -5% 0px' });
+}, { threshold: 0.15 });
 
 projectCards.forEach((el) => revealObserver.observe(el));
 
