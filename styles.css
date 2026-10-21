@@ -618,7 +618,7 @@ h1,h2,h3{
    FARBFLUT — bewusst kleiner, ruhiger Streifen
    ========================================================= */
 .section-sidenote{
-  background: var(--concrete);
+  background: var(--concrete-dark);
   border-top: 1px solid rgba(27,27,24,0.08);
   border-bottom: 1px solid rgba(27,27,24,0.08);
 }
