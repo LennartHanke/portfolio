@@ -244,7 +244,7 @@ h1,h2,h3{
 .project-media{
   position: relative;
   overflow: hidden;
-  aspect-ratio: 3508 / 2480;     /* alle Kacheln gleich hoch */
+  aspect-ratio: 1.414 / 1;     /* alle Kacheln gleich hoch */
   background:
     repeating-linear-gradient(0deg, rgba(43,76,224,0.1) 0 1px, transparent 1px 16px),
     repeating-linear-gradient(90deg, rgba(43,76,224,0.1) 0 1px, transparent 1px 16px),
@@ -255,7 +255,7 @@ h1,h2,h3{
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain !important;       /* füllt die Kachel, schneidet bei Bedarf zu */
+  object-fit: cover !important;       /* füllt die Kachel, schneidet bei Bedarf zu */
   transition: transform 0.5s ease;
 }
 .project-card:hover .project-media img{ transform: scale(1.02); }
