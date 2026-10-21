@@ -161,9 +161,9 @@ const projectsData = {
     title: 'Grenzen und Möglichkeiten aktueller KI-Systeme für interaktives Storytelling in Videospielen',
     subtitle: 'Bachelorarbeit, Medieningenieur, HAW Kiel - Note 1,3 (Arbeit) / 1,7 (Kolloquium)',
     images: [
-      { src: 'assets/chart-fallbispiele.png', alt: 'Eigenes Modell zur Systemorchestrierung hybrider KI-Systeme für interaktive Narrative' },
+      { src: 'assets/chart-fallbeispiele.png', alt: 'Eigenes Modell zur Systemorchestrierung hybrider KI-Systeme für interaktive Narrative' },
       { src: 'assets/chart-mittelwerte.png', alt: 'Balkendiagramm: Mittelwerte aller Testindikatoren im Vergleich der vier Systeme' },
-      { src: 'assets/diagramm-mittelwerte.png', alt: 'Balkendiagramm: Anzahl der Immersionsbrüche je System über alle Testdurchläufe' }
+      { src: 'assets/diagramm-orchestrierung.png', alt: 'Balkendiagramm: Anzahl der Immersionsbrüche je System über alle Testdurchläufe' }
     ],
     table: {
       caption: 'Testergebnisse — Gesamt-/Mittelwerte aller 240 Turns (60 je System)',
