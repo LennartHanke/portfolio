@@ -129,10 +129,10 @@ const projectsData = {
     title: 'UI Design & Prompt Engineering',
     subtitle: 'Praktikum bei appkellner UG',
     images: [
-      { src: 'assets/appkellner/title-screen.png', alt: 'Startbildschirm' },
-      { src: 'assets/appkellner/scene-crash.png', alt: 'Spielszene 1' },
-      { src: 'assets/appkellner/scene-glovebox.png', alt: 'Spielszene 2' },
-      { src: 'assets/appkellner/design-system.png', alt: 'UI-Design-System mit Typografie, Farben und Button-States' }
+      { src: 'assets/title-screen.png', alt: 'Startbildschirm' },
+      { src: 'assets/scene-crash.png', alt: 'Spielszene 1' },
+      { src: 'assets/scene-glovebox.png', alt: 'Spielszene 2' },
+      { src: 'assets/design-system.png', alt: 'UI-Design-System mit Typografie, Farben und Button-States' }
     ],
     sections: [
       { label: 'Kontext', text: 'Ein neues Produkt von appkellner: ein interaktives Story-Spiel, bei dem eine KI (OpenAI API) Geschichte und Bilder generieren soll — Spieler treffen fortlaufend Entscheidungen, um einen Fall zu lösen. Zu Praktikumsbeginn existierten nur eine Idee, ein erster Prototyp und ein festgelegter Tech-Stack (Figma, Godot Engine, Python-Backend, OpenAI API).' },
@@ -161,9 +161,9 @@ const projectsData = {
     title: 'Grenzen und Möglichkeiten aktueller KI-Systeme für interaktives Storytelling in Videospielen',
     subtitle: 'Bachelorarbeit, Medieningenieur, HAW Kiel - Note 1,3 (Arbeit) / 1,7 (Kolloquium)',
     images: [
-      { src: 'assets/bachelorarbeit/chart-fallbispiele.png', alt: 'Eigenes Modell zur Systemorchestrierung hybrider KI-Systeme für interaktive Narrative' },
-      { src: 'assets/bachelorarbeit/chart-mittelwerte.png', alt: 'Balkendiagramm: Mittelwerte aller Testindikatoren im Vergleich der vier Systeme' },
-      { src: 'assets/bachelorarbeit/diagramm-mittelwerte.png', alt: 'Balkendiagramm: Anzahl der Immersionsbrüche je System über alle Testdurchläufe' }
+      { src: 'assets/chart-fallbispiele.png', alt: 'Eigenes Modell zur Systemorchestrierung hybrider KI-Systeme für interaktive Narrative' },
+      { src: 'assets/chart-mittelwerte.png', alt: 'Balkendiagramm: Mittelwerte aller Testindikatoren im Vergleich der vier Systeme' },
+      { src: 'assets/diagramm-mittelwerte.png', alt: 'Balkendiagramm: Anzahl der Immersionsbrüche je System über alle Testdurchläufe' }
     ],
     table: {
       caption: 'Testergebnisse — Gesamt-/Mittelwerte aller 240 Turns (60 je System)',
