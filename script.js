@@ -1,11 +1,8 @@
-// ---------------------------------------------------------
-// Jahr im Footer
-// ---------------------------------------------------------
 document.getElementById('year').textContent = new Date().getFullYear();
 
 // ---------------------------------------------------------
 // Hero Live-Measure-Tool: gestrichelte Maßlinie vom Cursor
-// zur Headline, wie ein Design-Tool-Inspector (Figma-Style)
+// zur Headline, Design-Tool-Inspector (Figma-Style)
 // ---------------------------------------------------------
 (function setupInspector() {
   const hero = document.getElementById('top');
@@ -35,13 +32,13 @@ document.getElementById('year').textContent = new Date().getFullYear();
     const x = lastEvent.clientX - heroRect.left;
     const y = lastEvent.clientY - heroRect.top;
 
-    // Echte Textzeilen der Headline messen (nicht die volle Breite des h1-Blocks)
+    // Textzeilen der Headline messen
     const range = document.createRange();
     range.selectNodeContents(headline);
     const lineRects = Array.from(range.getClientRects()).filter(r => r.width > 0 && r.height > 0);
     if (!lineRects.length) return;
 
-    // nächster Punkt auf irgendeiner Textzeile zum Cursor
+    // nächster Punkt auf Textzeile zum Cursor
     let closestX = 0, closestY = 0, best = Infinity;
     lineRects.forEach((r) => {
       const left = r.left - heroRect.left;
@@ -67,8 +64,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
     const labelStr = `${distance}px`;
     labelText.textContent = labelStr;
 
-    // Box eng an die Schrift anpassen:
-    // Breite = echte Textlänge, Höhe = Schriftgröße (nicht die Zeilenhöhe)
+    // Box an die Schrift anpassen
+    // Breite = echte Textlänge, Höhe = Schriftgröße
     const padX = 3;
     const padY = 2;
     const fontSize = parseFloat(getComputedStyle(labelText).fontSize) || 11;
@@ -104,7 +101,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
   });
 })();
 
-// ---------------------------------------------------------
+
 // Scroll-Reveal für Projekt-Karten
 // ---------------------------------------------------------
 const projectCards = document.querySelectorAll('.project-card');
@@ -120,9 +117,8 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 projectCards.forEach((el) => revealObserver.observe(el));
 
-// ---------------------------------------------------------
-// Rich Case-Study-Daten für Projekte mit echten Materialien
-// (weitere Projekte werden hier ergänzt, sobald Material da ist)
+
+// Case-Study für Projekte
 // ---------------------------------------------------------
 const projectsData = {
   appkellner: {
@@ -197,9 +193,8 @@ document.querySelectorAll('.project-card').forEach((card) => {
   }
 });
 
-// ---------------------------------------------------------
+
 // Lightbox — Projekt-Details bei Klick auf eine Galerie-Kachel
-// (Fullsize-View, angelehnt an Jordan Jimenez' Referenz)
 // ---------------------------------------------------------
 (function setupLightbox() {
   const lightbox = document.getElementById('lightbox');
@@ -368,7 +363,7 @@ document.querySelectorAll('.project-card').forEach((card) => {
   });
 })();
 
-// ---------------------------------------------------------
+
 // Aktiven Nav-Link je nach Scroll-Position markieren
 // ---------------------------------------------------------
 const navLinks = document.querySelectorAll('.nav-links a');
@@ -389,7 +384,7 @@ const navObserver = new IntersectionObserver((entries) => {
 
 sections.forEach((section) => navObserver.observe(section));
 
-// ---------------------------------------------------------
+
 // Poster-Galerie: ein Poster gross, per Pfeil, Thumbnail,
 // Tastatur oder Wischen durchklicken
 // ---------------------------------------------------------
